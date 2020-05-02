@@ -15,6 +15,8 @@ import './lib/mui/css/mui.min.css'
 
 //创建vm实例
 var vm = new Vue({
+
     el: '#app',
     render: c => c(app),//覆盖了原来的div
+    
 })
