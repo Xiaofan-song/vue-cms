@@ -13,7 +13,9 @@
 
 export default {
     data() {
-        return {};
+        return {
+            mes:'13333'
+        };
     },
     created() {
         //?????为什么没有调用这个方法---钩子函数
