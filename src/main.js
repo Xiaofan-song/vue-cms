@@ -14,7 +14,8 @@ import router from './router.js'
 import app from './App.vue'
 
 //按需导入mint-ui
-import { Header, Swipe, SwipeItem } from 'mint-ui';
+import {Header, Swipe, SwipeItem} from 'mint-ui';
+
 Vue.component(Header.name, Header);
 Vue.component(Swipe.name, Swipe);//轮播图使用(mint-ui)
 Vue.component(SwipeItem.name, SwipeItem);//轮播图使用(mint-ui)
