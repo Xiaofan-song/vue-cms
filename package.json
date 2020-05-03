@@ -17,6 +17,7 @@
     "jquery": "^3.5.0",
     "mint-ui": "^2.2.13",
     "vue": "^2.6.11",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.1.6",
     "webpack": "^4.43.0"
   },
@@ -31,6 +32,7 @@
     "babel-preset-mobx": "^2.0.0",
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.2.1",
+    "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11",

@@ -3,8 +3,9 @@
     <!--header部分-->
     <mt-header fixed title="just do it"></mt-header>
 
+    <!-- 路由占个坑 -->
+    <router-view></router-view>
     <!--路由部分-->
-
     <!--Tabbar部分-->
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item" to="home">
@@ -26,9 +27,6 @@
         <span class="mui-tab-label">搜索</span>
       </router-link>
     </nav>
-
-
-    <router-view></router-view>
   </div>
 </template>
 <script>

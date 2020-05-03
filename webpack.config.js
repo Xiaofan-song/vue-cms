@@ -5,7 +5,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
-module.exports = {
+module.exports = {//配置出入口文件的
     entry: path.join(__dirname, './src/main.js'),
     output: {
         path: path.join(__dirname, './dist'),
@@ -25,7 +25,8 @@ module.exports = {
             {test: /\.vue$/, use: 'vue-loader'},//这是配置处理 vue 组件的
             {test: /\.css$/, use: ['style-loader', 'css-loader']},//这是配置处理 css 组件的
             // {test: /\.css$/, loader: 'style-loader!css-loader'}
-            {test:/.(png|gif|jpg|svg|ttf)$/, use:'file-loader'}
+            {test:/.(png|gif|jpg|svg|ttf)$/, use:'file-loader'},
+            {test:/\.scss$/,use:['style-loader','css-loader','sass-loader']}//处理scss文件的
         ]
     },
     resolve: {

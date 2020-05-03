@@ -19,6 +19,5 @@ var router = new VueRouter({
     linkActiveClass: 'mui-active'//默认覆盖路由高亮的类,默认的类叫做 router-link-active-
 });
 
-
 //es6标准,把路由对象暴露出去
 export default router;
