@@ -20,6 +20,7 @@ export default {
         console.log("哈哈");
         this.getLubotu();
     },
+
     methods: {
         getLubotu() {
             //获取轮播图数据的的方法
