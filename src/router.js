@@ -10,6 +10,7 @@ import ShopContainer from './components/tabbar/ShopContainer.vue'
 //创建路由规则
 var router = new VueRouter({
     routes: [
+        { path: '/', component: HomeContainer },//默认根路由为首页
         { path: '/home', component: HomeContainer },
         { path: '/member', component: MemberContainer },
         { path: '/search', component: SearchContainer },
