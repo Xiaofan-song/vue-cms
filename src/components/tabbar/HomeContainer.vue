@@ -14,7 +14,8 @@
 export default {
     data() {
         return {
-            mes:'13333'
+            mes:'13333',
+            data:'我的项目我乐意'
         };
     },
     created() {
