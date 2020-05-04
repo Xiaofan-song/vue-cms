@@ -10,6 +10,8 @@ import ShopContainer from './components/tabbar/ShopContainer.vue'
 import NewsList from './components/news/newsList.vue'
 //导入新闻详情的组件
 import NewsInfo from './components/news/newsInfo.vue'
+//导入home的照片页
+import  PhotoList from './components/photoes/PhotoList.vue'
 
 
 //创建路由规则
@@ -21,7 +23,8 @@ var router = new VueRouter({
         { path: '/search', component: SearchContainer },
         { path: '/shop', component: ShopContainer },
         { path: '/home/newslist', component: NewsList },
-        { path: '/home/newslist/:id', component: NewsInfo }
+        { path: '/home/newslist/:id', component: NewsInfo },
+        { path: '/home/photolist', component:PhotoList  }
         ],
 
         
