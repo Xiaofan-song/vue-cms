@@ -25,7 +25,10 @@ module.exports = {//配置出入口文件的
             {test: /\.vue$/, use: 'vue-loader'},//这是配置处理 vue 组件的
             {test: /\.css$/, use: ['style-loader', 'css-loader']},//这是配置处理 css 组件的
             // {test: /\.css$/, loader: 'style-loader!css-loader'}
-            {test:/.(png|gif|jpg|svg|ttf)$/, use:'file-loader'},
+            {test:/.(png|gif|jpg|svg|ttf)$/, use:[{loader:'url-loader',
+                    options: {esModule:false}//解决图片加载不出来的问题
+                }]
+            },
             {test:/\.scss$/,use:['style-loader','css-loader','sass-loader']}//处理scss文件的
         ]
     },

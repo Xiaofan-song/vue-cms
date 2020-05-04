@@ -6,6 +6,11 @@ import MemberContainer from './components/tabbar/MemberContainer.vue'
 import SearchContainer from './components/tabbar/SearchContainer.vue'
 import ShopContainer from './components/tabbar/ShopContainer.vue'
 
+//导入news的子组件
+import NewsList from './components/news/newsList.vue'
+//导入新闻详情的组件
+import NewsInfo from './components/news/newsInfo.vue'
+
 
 //创建路由规则
 var router = new VueRouter({
@@ -14,7 +19,10 @@ var router = new VueRouter({
         { path: '/home', component: HomeContainer },
         { path: '/member', component: MemberContainer },
         { path: '/search', component: SearchContainer },
-        { path: '/shop', component: ShopContainer }],
+        { path: '/shop', component: ShopContainer },
+        { path: '/home/newslist', component: NewsList },
+        { path: '/home/newslist/:id', component: NewsInfo }
+        ],
 
         
     linkActiveClass: 'mui-active'//默认覆盖路由高亮的类,默认的类叫做 router-link-active-
