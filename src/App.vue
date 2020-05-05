@@ -2,7 +2,6 @@
     <div class="header-container">
         <!--header部分-->
         <mt-header fixed title="just do it"></mt-header>
-
         <!-- 路由占个坑 -->
         <transition>
             <router-view></router-view>
