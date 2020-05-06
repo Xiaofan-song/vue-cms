@@ -15,12 +15,15 @@ import router from './router.js'
 import app from './App.vue'
 
 //按需导入mint-ui
-import {Header, Swipe, SwipeItem,Button} from 'mint-ui';
+import mint from 'mint-ui';
+Vue.use(mint);
+import 'mint-ui/lib/style.css'
 //按需导入
-Vue.component(Header.name, Header);
-Vue.component(Swipe.name, Swipe);//轮播图使用(mint-ui)
-Vue.component(SwipeItem.name, SwipeItem);//轮播图使用(mint-ui)
-Vue.component(Button.name, Button);
+// Vue.use(Lazyload);
+// Vue.component(Header.name, Header);
+// Vue.component(Swipe.name, Swipe);//轮播图使用(mint-ui)
+// Vue.component(SwipeItem.name, SwipeItem);//轮播图使用(mint-ui)
+// Vue.component(Button.name, Button);
 
 //引入mui
 import './lib/mui/css/mui.min.css'
@@ -44,6 +47,10 @@ import moment from 'moment'
 Vue.filter('dataFor',function (dataStr,pattern="YYYY-MM-DD HH:mm:ss") {
     return moment(dataStr).format(pattern);//给定指定的时间格式化
 });
+
+//安装图片预览插件
+import VuePreview from 'vue-preview'
+Vue.use(VuePreview);
 
 //创建vm实例
 var vm = new Vue({

@@ -7,11 +7,18 @@
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-transform-runtime",
-    ["component", {
+    [
+      "component",
+      {
         "libraryName": "mint-ui",
         "style": true
       }
-    ]]
+    ]
+  ],
+  "ignore":[ './src/lib/mui/js/mui.min.js']
+
+
+
 }
 
 
