@@ -46,6 +46,7 @@
         data() {
             return {
                 lunbotuList: [],
+                mes:'ddd'
             }
         },
         created() {
