@@ -1,6 +1,6 @@
 <template>
     <div>
-        <swiper v-bind:lunbotulist="lunbotuList"></swiper>
+        <swiper v-bind:lunbotulist="lunbotuList" :isfull="true"></swiper>
         <!--这是中间部分-->
         <ul class="mui-table-view mui-grid-view mui-grid-9">
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">

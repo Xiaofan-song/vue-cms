@@ -3,10 +3,12 @@
         <!--header部分-->
         <mt-header fixed title="Just Do It"></mt-header>
         <!-- 路由占个坑 -->
+
         <transition>
             <router-view></router-view>
         </transition>
         <!--路由部分-->
+
         <!--Tabbar部分-->
         <nav class="mui-bar mui-bar-tab">
             <router-link class="mui-tab-item111" to="/home">
@@ -19,7 +21,7 @@
             </router-link>
             <router-link class="mui-tab-item111" to="/shop">
             <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-                <span class="mui-badge">9</span>
+                <span class="mui-badge" id="badge">9</span>
             </span>
                 <span class="mui-tab-label">购物车</span>
             </router-link>
