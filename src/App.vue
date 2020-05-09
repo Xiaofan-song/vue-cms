@@ -1,9 +1,13 @@
 <template>
     <div class="header-container">
         <!--header部分-->
-        <mt-header fixed title="Just Do It"></mt-header>
-        <!-- 路由占个坑 -->
+        <mt-header fixed title="Just Do It">
+            <span slot="left" @click="goBack">
+                <mt-button icon="back" v-show="flag">返回</mt-button>
+            </span>
+        </mt-header>
 
+        <!-- 路由占个坑 -->
         <transition>
             <router-view></router-view>
         </transition>
@@ -21,7 +25,7 @@
             </router-link>
             <router-link class="mui-tab-item111" to="/shop">
             <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-                <span class="mui-badge" id="badge">9</span>
+                <span class="mui-badge" id="badge">{{$store.getters.addAllCount}}</span>
             </span>
                 <span class="mui-tab-label">购物车</span>
             </router-link>
@@ -33,6 +37,32 @@
     </div>
 </template>
 <script>
+    export default {
+        data() {
+            return {
+                flag: true
+            }
+        },
+        created() {
+        },
+        methods: {
+            goBack() {
+                //路由跳转
+                this.$router.go(-1);
+            },
+
+        },
+        watch: {
+            '$route.path':function (newVa) {
+                if(newVa==='/home'){
+                    this.flag=false
+                }else {
+                    this.flag=true;
+                }
+            }
+        }
+
+    }
 </script>
 <style scoped lang="scss">
 
